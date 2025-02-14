@@ -1,0 +1,70 @@
+.slider{
+  margin-bottom: 50px;
+  &-arrows{
+    .left{
+      position: absolute;
+      top: 50%;
+      left: -30px;
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+      box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.05);
+      background: #fff;
+      cursor: pointer;
+      transition: 0.25s;
+      svg{
+        transform: rotate(180deg);
+        position: absolute;
+        top: 40%;
+        left: 40%;
+      }
+    }
+    .left:hover{
+      background: black;
+      svg{
+        path{
+          fill: #fff;
+        }
+      }
+    }
+    .right{
+      position: absolute;
+      top: 50%;
+      right: -30px;
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+      box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.05);
+      background: #fff;
+      cursor: pointer;
+      transition: 0.25s;
+      svg{
+        position: absolute;
+        top: 40%;
+        right: 40%;
+      }
+    }
+    .right:hover{
+      background: black;
+      svg{
+        path{
+          fill: #fff;
+        }
+      }
+    }
+  }
+  
+  &-inner{
+    position: relative;
+  }
+
+  &-images{
+    display: flex;
+  }
+
+  &-block:not(:first-child){
+    display: flex;
+  }
+
+  
+}

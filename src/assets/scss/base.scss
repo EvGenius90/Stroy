@@ -1,0 +1,39 @@
+*
+  {
+    box-sizing: border-box;
+  }
+  
+html{
+  height: 100%;
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+body{
+  color: var(--text);
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.main{
+  flex-grow: 1;
+}
+
+.container{
+  max-width: 1650px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.d-none{
+  display: none;
+}
+
+.d-block{
+  display: block;
+}
