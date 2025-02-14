@@ -1,7 +1,9 @@
 <script setup>
-
+  import AboutCompany from '@/components/UI/AboutCompany.vue';
 </script>
 
 <template>
-  <h1>about</h1>
+  <div>
+    <AboutCompany/>
+  </div>
 </template>

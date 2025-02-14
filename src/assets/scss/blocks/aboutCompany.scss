@@ -1,0 +1,48 @@
+.company{
+  &_inner{
+    .why{
+      margin-bottom: 80px;
+
+      h3{
+        font-family: var(--HelveticaNeueCyrBold);
+        font-size: 33px;
+        line-height: 94%;
+        margin-bottom: 57px;
+      }
+
+      .box{
+        .list{
+          display: flex;
+          justify-content: space-between;
+
+          li{
+            display: flex;
+            align-items: flex-start;
+            max-width: 332px;
+
+            img{
+              margin-right: 18px;
+            }
+
+            .block{
+
+              .medium{
+                font-family: var(--HelveticaNeueCyrMedium);
+                font-size: 20px;
+                line-height: 120%;
+                margin-bottom: 11px;
+                text-wrap: balance;
+              }
+
+              .regular{
+                font-family: var(--HelveticaNeueCyrRegulat);
+                font-size: 15px;
+                line-height: 160%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
