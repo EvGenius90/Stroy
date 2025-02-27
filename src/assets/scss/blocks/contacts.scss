@@ -1,0 +1,137 @@
+.contacts{
+
+  &_inner{
+
+    .section-first{
+      display: flex;
+      position: relative;
+      margin-bottom: 50px;
+      // height: 611px;
+    }
+
+    .section-second{
+
+      .contact-places{
+        display: flex;
+        gap: 23px;
+        margin-bottom: 50px;
+
+        &_items{
+          display: grid;
+          // grid-template-columns: auto auto auto auto;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          gap: 20px;
+          // flex-shrink: 0;
+        }
+
+        &_item{
+          padding: 30px 25px;
+          border: 1px solid #f2f4f6;
+          border-radius: 8px;
+
+
+          p{
+            font-family: var(--HelveticaNeueCyrRegulat);
+            font-size: 15px;
+            line-height: 140%;
+            color: var(--text-seven);
+            margin-bottom: 17px;
+          }
+
+          a{
+            font-family: var(--HelveticaNeueCyrMedium);
+            font-size: 18px;
+            line-height: 117%;
+            color: var(--text-eight);
+            transition: 0.25s;
+          }
+
+          a:hover{
+            color: #186fd4;
+          }
+        }
+
+        .regions{
+          max-width: 328px;
+          padding: 20px;
+          background: #f7f9fc;
+
+          .regions_title{
+            font-family: var(--HelveticaNeueCyrMedium);
+            font-size: 16px;
+            line-height: 131%;
+            margin-bottom: 5px;
+          }
+
+          .regions_text{
+            font-family: var(--HelveticaNeueCyrRegulat);
+            font-size: 12px;
+            line-height: 175%;
+            color: var(--text-nine);
+          }
+        }
+      }
+    }
+  }
+
+  &_map{
+    width: 100%;
+    margin-right: 150px;
+    // position: absolute;
+    // z-index: -1;
+  }
+
+  &_card{
+    position: absolute;
+    top: 51px;
+    right: 0;
+    z-index: 1;
+    padding: 30px;
+    max-width: 351px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 4px 19px 0 rgba(23, 27, 32, 0.07);
+
+    ul{
+
+      li{
+        display: flex;
+        gap: 19px;
+        margin-bottom: 23px;
+        
+        img{
+          width: 13px;
+          height: 17px;
+        }
+
+        .card-text{
+          // margin-left: 15px;
+        }
+      }
+    }
+  }
+
+  &_box{
+    display: flex;
+    gap: 19px;
+    margin-bottom: 16px;
+
+    img{
+
+    }
+  }
+
+  &_button{
+    width: 100%;
+    background: var(--background-button-dark-blue);
+    border-radius: 8px;
+    padding: 24px 27px;
+    text-transform: uppercase;
+    font-family: var(--HelveticaNeueCyrBold);
+    font-size: 13px;
+    line-height: 131%;
+    color: var(--text-white);
+    cursor: pointer;
+    text-align: center;
+  }
+}
