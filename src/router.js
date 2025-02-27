@@ -4,6 +4,11 @@ const routerHistory = createWebHistory()
 
 import homePage from './pages/Home.vue'
 import aboutPage from "./pages/About.vue"
+import payPage from './pages/Pay.vue'
+import deliveryPage from './pages/Delivery.vue'
+import newsPage from './pages/News.vue'
+import newsDetailPage from './components/NewsDetail.vue'
+import contactPage from '@/pages/Contacts.vue'
 
 const routers = createRouter({
   history: routerHistory,
@@ -15,6 +20,26 @@ const routers = createRouter({
     {
       path: '/about',
       component: aboutPage
+    },
+    {
+      path: '/pay',
+      component: payPage
+    },
+    {
+      path: '/delivery',
+      component: deliveryPage
+    },
+    {
+      path: '/news',
+      component: newsPage
+    },
+    {
+      path: '/contacts',
+      component: contactPage
+    },
+    {
+      path: '/newsDetail/:alias',
+      component: newsDetailPage
     }
   ]
 })
