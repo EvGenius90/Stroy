@@ -32,3 +32,36 @@ export const departments = [
     phone: '8 (8782) 28-42-73'
   },
 ]
+
+export const regions = [
+  {
+    title: 'Москва',
+    phone: '+7 (800) 444-00-65',
+    email: 'info@stroiopttorg.ru'
+  },
+  {
+    title: 'Ставрополь',
+    phone: '+7 (800) 444-00-65',
+    email: 'info@stroiopttorg.ru'
+  },
+  {
+    title: 'Краснодар',
+    phone: '+7 (800) 444-00-65',
+    email: 'info@stroiopttorg.ru'
+  },
+  {
+    title: 'Грозный',
+    phone: '+7 (800) 444-00-65',
+    email: 'info@stroiopttorg.ru'
+  },
+  {
+    title: 'Ростов-на-Дону',
+    phone: '+7 (800) 444-00-65',
+    email: 'info@stroiopttorg.ru'
+  },
+  {
+    title: 'Самара',
+    phone: '+7 (800) 444-00-65',
+    email: 'info@stroiopttorg.ru'
+  },
+]

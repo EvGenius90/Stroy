@@ -8,11 +8,13 @@
   --text-seven: #494d52;
   --text-eight: #2f3134;
   --text-nine: #2c2f33;
+  --text-ten: #696d70;
   --text-blue: #2a5e8d;
   --text-gray: #6a6f75;
-  --text-dark: #1d1d27
+  --text-dark: #1d1d27;
   --text-dark-blue: #003b73;
-  --text-form: #adb1b7
+  --text-form: #adb1b7;
+  --border-form: #ebeef0;
   --background-button-blue: #117fe3;
   --background-button-light-blue: #f2f6fc;
   --background-button-dark-blue: #186fd4;
@@ -25,10 +27,10 @@
   --background-form: #f9fafb;
 
 
-  --HelveticaNeueCyrBold: "HelveticaNeueCyrBold", sans-serif;
-  --HelveticaNeueCyrMedium: "HelveticaNeueCyrMedium", sans-serif;
+  --HelveticaNeueCyrBold: "HelveticaNeueCyrBold", sans-serif; //700
+  --HelveticaNeueCyrMedium: "HelveticaNeueCyrMedium", sans-serif; //500
   --HelveticaNeueCyrItalic: "HelveticaNeueCyrItalic", sans-serif;
-  --HelveticaNeueCyrRegulat: "Helvetica", sans-serif;
+  --HelveticaNeueCyrRegulat: "Helvetica", sans-serif; //400
   --second-family: "Helvetica", sans-serif;
   --third-family: "Pragmatica", sans-serif;
 }

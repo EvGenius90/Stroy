@@ -142,7 +142,7 @@ export const cards = [
   {
     title: 'Email адрес',
     svg: require('./assets/svg/card/email.svg'),
-    text: 'info@stroiopttorg.ru'
+    email: 'info@stroiopttorg.ru'
   },
   {
     title: 'Время работы',

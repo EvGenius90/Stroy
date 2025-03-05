@@ -2,6 +2,13 @@
 
   &_inner{
 
+    h1{
+      font-family: var(--HelveticaNeueCyrBold);
+      font-size: 48px;
+      line-height: 112%;
+      margin-bottom: 35px;
+    }
+
     .section-first{
       display: flex;
       position: relative;
@@ -13,12 +20,12 @@
 
       .contact-places{
         display: flex;
+        justify-content: space-between;
         gap: 23px;
         margin-bottom: 50px;
 
         &_items{
           display: grid;
-          // grid-template-columns: auto auto auto auto;
           grid-template-columns: 1fr 1fr 1fr 1fr;
           gap: 20px;
           // flex-shrink: 0;
@@ -51,23 +58,74 @@
           }
         }
 
-        .regions{
+        .requisites{
           max-width: 328px;
           padding: 20px;
           background: #f7f9fc;
 
-          .regions_title{
+          .requisites_title{
             font-family: var(--HelveticaNeueCyrMedium);
             font-size: 16px;
             line-height: 131%;
             margin-bottom: 5px;
           }
 
-          .regions_text{
+          .requisites_text{
             font-family: var(--HelveticaNeueCyrRegulat);
             font-size: 12px;
             line-height: 175%;
             color: var(--text-nine);
+          }
+        }
+      }
+
+      .regions{
+
+        &_title{
+          font-family: var(--HelveticaNeueCyrMedium);
+          font-size: 20px;
+          line-height: 130%;
+          margin-bottom: 25px;
+        }
+
+        &_contacts{
+
+        }
+
+        &_list{
+          display: flex;
+          gap: 7px;
+          justify-content: space-between;
+
+          &__item{
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+          }
+
+          &__title{
+            font-family: var(--HelveticaNeueCyrRegulat);
+            font-size: 15px;
+            line-height: 140%;
+            color: var(--text-seven);
+          }
+
+          &__phone{
+            font-family: var(--HelveticaNeueCyrMedium);
+            font-size: 18px;
+            line-height: 117%;
+            color: var(--text-eight);
+          }
+
+          &__email{
+            
+            a{
+              font-family: var(--HelveticaNeueCyrRegulat);
+              font-size: 15px;
+              line-height: 140%;
+              text-decoration: underline;
+              color: #186fd4;
+            }
           }
         }
       }
@@ -77,8 +135,6 @@
   &_map{
     width: 100%;
     margin-right: 150px;
-    // position: absolute;
-    // z-index: -1;
   }
 
   &_card{
@@ -104,21 +160,37 @@
           height: 17px;
         }
 
-        .card-text{
-          // margin-left: 15px;
-        }
       }
     }
   }
 
   &_box{
-    display: flex;
-    gap: 19px;
-    margin-bottom: 16px;
+    // display: flex;
+    // gap: 19px;
+    // margin-bottom: 16px;
 
-    img{
-
+    .box_title{
+      font-family: var(--HelveticaNeueCyrBold);
+      font-size: 17px;
+      line-height: 124%;
+      margin-bottom: 13px;
     }
+
+    .box_text{
+      font-family: var(--HelveticaNeueCyrRegulat);
+      font-size: 15px;
+      line-height: 140%;
+      color: var(--text-seven);
+    }
+
+    .box_link{
+      text-decoration: underline;
+      color: #186fd4;
+      font-family: var(--HelveticaNeueCyrRegulat);
+      font-size: 15px;
+      line-height: 140%;
+    }
+
   }
 
   &_button{

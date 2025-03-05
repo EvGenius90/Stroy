@@ -1,6 +1,7 @@
 <script setup>
 import {cards} from '../config'
-import { departments } from '@/contacts';
+import { departments, regions } from '@/contacts';
+import Form from '@/components/UI/Form.vue';
 
 </script>
 
@@ -17,9 +18,10 @@ import { departments } from '@/contacts';
             <ul>
               <li v-for="card in cards" :key="card">
                   <img :src="card.svg" alt="">
-                <div class="box">
-                  <p>{{ card.title }}:</p>
-                  <p class="card-text">{{ card.text }}</p>
+                <div class="contacts_box">
+                  <p class="box_title">{{ card.title }}:</p>
+                  <p class="box_text">{{ card.text }}</p>
+                  <a class="box_link" href="#">{{ card.email }}</a>
                 </div>
               </li>
             </ul>
@@ -37,16 +39,30 @@ import { departments } from '@/contacts';
                 </div>
               </li>
             </ul>
-            <div class="regions">
-              <p class="regions_title">Реквизиты:</p>
-              <div class="regions_text">
+            <div class="requisites">
+              <p class="requisites_title">Реквизиты:</p>
+              <div class="requisites_text">
                 <p>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "СТРОЙОПТТОРГ"ИНН 0901051787КПП 090101001369000, Карачаево-Черкесская республика, город Черкесск, Октябрьская улица, 301р/с 40702810360000102415 в Ставропольское отделение №5230 ПАО Сбербанк, БИК 040702615</p>
               </div>
             </div>
           </div>
-          
+          <div class="regions">
+            <div class="regions_title">
+              Работаем по регионам:
+            </div>
+            <div class="regions_contacts">
+              <ul class="regions_list">
+                <li class="regions_list__item" v-for="region in regions" :key="region">
+                  <div class="regions_list__title">{{ region.title }}</div>
+                  <div class="regions_list__phone">{{ region.phone }}</div>
+                  <div class="regions_list__email"><a href="#">{{ region.email }}</a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
       </div>
     </div>
+    <Form/>
   </div>
 </template>
