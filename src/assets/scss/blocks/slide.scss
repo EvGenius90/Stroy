@@ -17,6 +17,9 @@
         position: absolute;
         top: 40%;
         left: 40%;
+        path{
+          transition: 0.25s;
+        }
       }
     }
     .left:hover{
@@ -42,6 +45,9 @@
         position: absolute;
         top: 40%;
         right: 40%;
+        path{
+          transition: 0.25s;
+        }
       }
     }
     .right:hover{

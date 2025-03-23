@@ -109,7 +109,9 @@ import NewsSlider from './NewsSlider.vue';
           </div>
         </section>
       </div>
-      <NewsSlider/>
+      <div>
+        <NewsSlider :itemsToShow="4" titles="Последние новости"/>
+      </div>
     </div>
   </div>
 </template>

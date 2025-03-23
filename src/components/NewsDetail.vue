@@ -65,7 +65,7 @@ watch(() => route.params.alias, updateProduct);
           <Subscribe/>
         </div>
       </div>
-      <NewsSlider/>
+      <NewsSlider :itemsToShow="6" titles="Другие новости"/>
       
     </div>
   </div>
