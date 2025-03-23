@@ -1,6 +1,6 @@
 <script setup>
 import { newsBlocks } from '@/config';
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, watch } from 'vue';
 
 const props = defineProps({
   article: String,
@@ -26,67 +26,96 @@ const props = defineProps({
   reviewsDesc: String
 })
 
-const paginationNumbers = ref(null)
-const paginatedList = ref(null)
-const listItems = ref([])
-const nextButton = ref(null)
-const prevButton = ref(null)
+const paginationNumbers = ref(null);
+const paginatedList = ref(null);
+const listItems = ref([]);
+const nextButton = ref(null);
+const prevButton = ref(null);
 const paginationLimit = ref(12);
-let currentPage = ref(1);
+const currentPage = ref(1);
+const pageCount = ref(0); // Используем ref для доступности
+
+const appendPageNumber = (index) => {
+  const pageNumber = document.createElement("button");
+  pageNumber.className = "pagination-number";
+  pageNumber.innerHTML = index;
+  pageNumber.setAttribute("page-index", index);
+  pageNumber.setAttribute("aria-label", "Page " + index);
+  paginationNumbers.value.appendChild(pageNumber);
+};
+
+const getPaginationNumbers = () => {
+  paginationNumbers.value.innerHTML = ''; // Очистка старых кнопок
+  for (let i = 1; i <= pageCount.value; i++) {
+    appendPageNumber(i);
+  }
+};
+
+const setCurrentPage = (pageNum) => {
+  if (pageNum < 1 || pageNum > pageCount.value) return; // Проверка на допустимость
+
+  currentPage.value = pageNum;
+
+  const prevRange = (pageNum - 1) * paginationLimit.value;
+  const currRange = pageNum * paginationLimit.value;
+
+  listItems.value.forEach((item, index) => {
+    item.classList.add("hidden");
+    if (index >= prevRange && index < currRange) {
+      item.classList.remove("hidden");
+    }
+  });
+
+  document.querySelectorAll(".pagination-number").forEach((button) => {
+    button.classList.toggle("active", Number(button.getAttribute("page-index")) === currentPage.value);
+  });
+};
+
+// Обработчики событий для кнопок пагинации
+const addPaginationListeners = () => {
+  document.querySelectorAll(".pagination-number").forEach((button) => {
+    const pageIndex = Number(button.getAttribute("page-index"));
+    button.addEventListener("click", () => {
+      setCurrentPage(pageIndex);
+    });
+  });
+};
 
 onMounted(() => {
   paginationNumbers.value = document.getElementById("pagination-numbers");
   paginatedList.value = document.getElementById("paginated-list");
   nextButton.value = document.getElementById("next-button");
   prevButton.value = document.getElementById("prev-button");
-  if(paginatedList.value){
-    listItems.value = paginatedList.value.querySelectorAll("li");
-  }
   
-  const pageCount = Math.ceil(listItems.value.length / paginationLimit.value);
-
-  const appendPageNumber = (index) => {
-    const pageNumber = document.createElement("button");
-    pageNumber.className = "pagination-number";
-    pageNumber.innerHTML = index;
-    pageNumber.setAttribute("page-index", index);
-    pageNumber.setAttribute("aria-label", "Page " + index);
-    paginationNumbers.value.appendChild(pageNumber);
-  };
-  const getPaginationNumbers = () => {
-    for (let i = 1; i <= pageCount; i++) {
-      appendPageNumber(i);
-    }
-  };
-
-  const setCurrentPage = (pageNum) => {
-    currentPage.value = pageNum;
-    
-    const prevRange = (pageNum - 1) * paginationLimit.value;
-    const currRange = pageNum * paginationLimit.value;
-    listItems.value.forEach((item, index) => {
-      item.classList.add("hidden");
-      if (index >= prevRange && index < currRange) {
-        item.classList.remove("hidden");
-      }
-    });
-  };
-
-  window.addEventListener("load", () => {
+  if (paginatedList.value) {
+    listItems.value = paginatedList.value.querySelectorAll("li");
+    pageCount.value = Math.ceil(listItems.value.length / paginationLimit.value); // Пересчет здесь
     getPaginationNumbers();
-    setCurrentPage(1);
+    setCurrentPage(1); // Устанавливаем первую страницу
+    addPaginationListeners(); // Добавляем обработчики событий
+  }
 
-    document.querySelectorAll(".pagination-number").forEach((button) => {
-      const pageIndex = Number(button.getAttribute("page-index"))
-
-      if(pageIndex){
-        button.addEventListener("click", () => {
-          setCurrentPage(pageIndex);
-        });
-      }
-    })
+  // Обработчики для кнопок "Назад" и "Далее"
+  nextButton.value.addEventListener("click", () => {
+    if (currentPage.value < pageCount.value) {
+      setCurrentPage(currentPage.value + 1);
+    }
   });
-})
+
+  prevButton.value.addEventListener("click", () => {
+    if (currentPage.value > 1) {
+      setCurrentPage(currentPage.value - 1);
+    }
+  });
+});
+
+// Отслеживание изменения текущей страницы (если потребуется)
+watch(currentPage, (newPage) => {
+  setCurrentPage(newPage);
+});
+
+
+
 </script>
 
 <template>

@@ -6,14 +6,10 @@
     line-height: 112%;
     margin-bottom: 30px;
   }
+
   .hidden{
     display: none;
   }
-  &_inner{
-    
-  }
-
-  
 
   &_cont{
     display: flex;
@@ -138,9 +134,14 @@
         background: #fff;
         cursor: pointer;
         transition: 0.25s;
+      
       }
 
       .pagination-number:hover{
+        background: #000;
+        color: #fff;
+      }
+      .active{
         background: #000;
         color: #fff;
       }
