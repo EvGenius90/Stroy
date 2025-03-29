@@ -9,6 +9,8 @@ import deliveryPage from './pages/Delivery.vue'
 import newsPage from './pages/News.vue'
 import newsDetailPage from './components/NewsDetail.vue'
 import contactPage from '@/pages/Contacts.vue'
+import products from '@/pages/Products.vue'
+import catalog from '@/pages/Catalog.vue'
 
 const routers = createRouter({
   history: routerHistory,
@@ -40,6 +42,14 @@ const routers = createRouter({
     {
       path: '/newsDetail/:alias',
       component: newsDetailPage
+    },
+    {
+      path: '/products',
+      component: products
+    },
+    {
+      path: '/catalog',
+      component: catalog
     }
   ]
 })

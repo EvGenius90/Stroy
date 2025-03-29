@@ -33,6 +33,362 @@ export const links = [
   }
 ]
 
+export const card = [
+  {
+    title: 'Перфоратор универсальный Wander X645-46 GF 1450W',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle22.png'),
+    // img: './assets/images/products/Rectangle 22-1.png',
+  },
+  {
+    title: 'Смеситель Faris G-120 для раковины',
+    article: 'XJ89YHGO',
+    price: 12789,
+    img: require('./assets/images/products/Rectangle 22 (3).png'),
+    hit: 'хит'
+  },
+  {
+    title: 'Триммерная леска «Спираль-100»',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle2.png'),
+  },
+  
+  {
+    title: 'Унитаз подвесной Aragio с двойным сливом',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Набор гравировальных насадок Nozzle-Tok',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-18.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Перфоратор универсальный Wander X645-46 GF 1450W',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22 (2).png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Смеситель Faris G-120 для раковины',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22 (3).png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Триммерная леска «Спираль-100»',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 2223.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Набор гравировальных насадок Nozzle-Tok',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-1.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Унитаз подвесной Aragio с двойным сливом',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-2.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Перфоратор универсальный Wander X645-46 GF 1450W',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-3.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Набор гравировальных насадок Nozzle-Tok',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-4.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Смеситель Faris G-120 для раковины',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-5.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Триммерная леска «Спираль-100»',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-6.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Унитаз подвесной Aragio с двойным сливом',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-7.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Перфоратор универсальный Wander X645-46 GF 1450W',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-8.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Триммерная леска «Спираль-100»',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-9.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Набор гравировальных насадок Nozzle-Tok',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-10.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Унитаз подвесной Aragio с двойным сливом',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-11.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Смеситель Faris G-120 для раковины',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-12.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Перфоратор универсальный Wander X645-46 GF 1450W',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 2221.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Унитаз подвесной Aragio с двойным сливом',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-23.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Перфоратор универсальный Wander X645-46 GF 1450W',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-22.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Триммерная леска «Спираль-100»',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-21.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Триммерная леска «Спираль-100»',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-20.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Набор гравировальных насадок Nozzle-Tok',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-19.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Набор гравировальных насадок Nozzle-Tok',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-18.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Смеситель Faris G-120 для раковины',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-17.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Смеситель Faris G-120 для раковины',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-16.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Унитаз подвесной Aragio с двойным сливом',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-11.png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Унитаз подвесной Aragio с двойным сливом',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22 (3).png'),
+    hit: 'хит'
+    
+  },
+  {
+    title: 'Набор гравировальных насадок Nozzle-Tok',
+    article: 'XJ89YHGO',
+    price: 12789,
+    oldPrice: 15999,
+    percent: '-15%',
+    img: require('./assets/images/products/Rectangle 22-18.png'),
+    hit: 'хит'
+    
+  },
+]
+
+export const categories = [
+  {
+    title: 'Сантехника',
+    img: require('@/assets/images/categories/Plumbing.png'),
+    url: '/products'
+  },
+  {
+    title: 'Отделочные материалы',
+    img: require('@/assets/images/categories/Finishing_materials.png'),
+    url: '/products'
+  },
+  {
+    title: 'Электротовары',
+    img: require('@/assets/images/categories/Electrical_goods.png'),
+    url: '/products'
+  },
+  {
+    title: 'Инструменты',
+    img: require('@/assets/images/categories/Tools.png'),
+    url: '/products'
+  },
+  {
+    title: 'Столярные изделия',
+    img: require('@/assets/images/categories/Joinery.png'),
+    url: '/products'
+  },
+  {
+    title: 'Общестроительные материалы',
+    img: require('@/assets/images/categories/construction_materials.png'),
+    url: '/products'
+  },
+  {
+    title: 'Все для сауны и бани',
+    img: require('@/assets/images/categories/saunas_and_baths.png'),
+    url: '/products'
+  },
+]
+
 export const profile = [
   {
     title: 'Все акции',

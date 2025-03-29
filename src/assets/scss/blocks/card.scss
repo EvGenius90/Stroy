@@ -1,0 +1,129 @@
+.card{
+  padding: 0 15px;
+
+  &_top{
+    position: relative;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  &_hit{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #f90;
+    border-radius: 5px;
+    padding: 6px 8px;
+    font-family: var(--HelveticaNeueCyrMedium);
+    font-size: 13px;
+    line-height: 146%;
+    color: #f90;
+    background: #fff;
+  }
+
+  &_article{
+    margin-bottom: 15px;
+    font-family: var(--HelveticaNeueCyrRegulat);
+    font-size: 13px;
+    line-height: 100%;
+    color: #a8adb2;
+  }
+
+  &_title{
+    font-family: var(--HelveticaNeueCyrMedium);
+    font-size: 18px;
+    line-height: 144%;
+    margin-bottom: 25px;
+    transition: 0.25s;
+  }
+
+  &_title:hover{
+    p{
+      color: #186fd4;
+    }
+    
+  }
+
+  &_prices{
+    display: flex;
+    margin-bottom: 10px;
+
+    .old-price{
+      font-family: var(--HelveticaNeueCyrRegulat);
+      font-size: 15px;
+      line-height: 147%;
+      color: #8f9296;
+      text-decoration: line-through;
+      margin-right: 10px;
+    }
+
+    .price{
+      font-family: var(--HelveticaNeueCyrMedium);
+      font-size: 20px;
+      line-height: 110%;
+      color: #003b73;
+      margin-right: 7px;
+    }
+
+    .percent{
+      border-radius: 4px;
+      padding: 8px 5px;
+      background: #1b9665;
+      font-family: var(--HelveticaNeueCyrBold);
+      font-size: 11px;
+      line-height: 100%;
+      color: #fff;
+    }
+  }
+
+  &_bottom{
+    display: flex;
+    justify-content: space-between;
+
+    .to-basket{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-radius: 6px;
+      padding: 7px 17px;
+      background: #186fd4;
+      cursor: pointer;
+      transition: 0.25s;
+
+      span{
+        font-family: var(--HelveticaNeueCyrMedium);
+        font-size: 15px;
+        line-height: 147%;
+        color: #fff;
+      }
+    }
+
+    .to-basket:hover{
+      background: #011120;
+    }
+
+    .indicators{
+      display: flex;
+      gap: 9px;
+      &_like{
+
+      }
+
+      &_svg{
+        display: flex;
+        align-items: center;
+        padding: 0 11.5px;
+        border: 1px solid #f3f4f5;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.25s;
+      }
+
+      &_svg:hover{
+        border: 1px solid #007aff;
+      }
+    }
+
+    
+  }
+}

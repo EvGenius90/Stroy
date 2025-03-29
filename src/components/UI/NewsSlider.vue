@@ -24,7 +24,6 @@ const news = ref([]);
 onMounted(() => {
   news.value = newsBlocks.slice(0, props.itemsToShow);
 });
-
 </script>
 
 <template>

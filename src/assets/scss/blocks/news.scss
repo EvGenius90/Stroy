@@ -82,21 +82,21 @@
     }
 
     #prev-button{
-      transition: 0.25s;
+      transition: 125ms;
 
       svg{
         path{
-          transition: 0.25s;
+          transition: 125ms;
         }
       }
     }
 
     #next-button{
-      transition: 0.25s;
+      transition: 125ms;
 
       svg{
         path{
-          transition: 0.25s;
+          transition: 125ms;
         }
       }
     }
@@ -133,13 +133,14 @@
         padding: 19px 24px;
         background: #fff;
         cursor: pointer;
-        transition: 0.25s;
+        transition: 125ms;
       
       }
 
       .pagination-number:hover{
-        background: #000;
         color: #fff;
+        background: #000;
+        
       }
       .active{
         background: #000;

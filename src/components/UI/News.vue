@@ -113,9 +113,6 @@ onMounted(() => {
 watch(currentPage, (newPage) => {
   setCurrentPage(newPage);
 });
-
-
-
 </script>
 
 <template>
