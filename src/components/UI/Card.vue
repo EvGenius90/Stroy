@@ -1,17 +1,24 @@
 <script setup>
 import { card } from '@/config';
+import { onMounted, ref } from 'vue';
 
-// export const props = defineProps({
-//   title: String
-// })
+// const count = ref(card.values.length)
+const cards = ref(card)
+// const count = ()=>{
+//   return cards.value.length
+// }
+const emit = defineEmits(['zxc'])
+onMounted(() =>{
+  emit('zxc', cards.value.length)
+})
 </script>
 
 <template>
   <div class="card" v-for="cards in card" :key="cards">
     <div class="card_top">
-      <a href="#">
+      <router-link :to="{path:`/cardDetail/${cards.alias}`}">
         <img :src="cards.img" alt="">
-      </a>
+      </router-link>
       <div class="card_hit" v-if="cards.hit">
         {{ cards.hit }}
       </div>
@@ -20,14 +27,14 @@ import { card } from '@/config';
       Артикул: {{ cards.article }}
     </div>
     <div class="card_title">
-      <a href="#">
+      <router-link :to="{path:`/cardDetail/${cards.alias}`}">
         <p>{{ cards.title }}</p>
-      </a>
+      </router-link>
     </div>
     <div class="card_prices">
       <div class="old-price" v-if="cards.oldPrice">{{ cards.oldPrice }} ₽</div>
       <div class="price">{{ cards.price }} ₽</div>
-      <div class="percent" v-if="cards.percent">{{ cards.percent }}</div>
+      <div class="percent" v-if="cards.oldPrice">{{ cards.percent }}</div>
     </div>
     <div class="card_bottom">
       <div class="to-basket">

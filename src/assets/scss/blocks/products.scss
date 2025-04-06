@@ -1,5 +1,30 @@
 .products{
 
+  &_top{
+    display: flex;
+    align-items: flex-end;
+    gap: 18px;
+    margin-bottom: 50px;
+
+    span{
+      font-family: var(--HelveticaNeueCyrRegulat);
+      font-size: 15px;
+      line-height: 133%;
+      color: #6c7177;
+    }
+  }
+
+  h1{
+    font-family: var(--HelveticaNeueCyrBold);
+    font-size: 48px;
+    line-height: 112%;
+    
+  }
+
+  &_main{
+    display: flex;
+    gap: 20px;
+  }
 
   &_items{
     display: grid;

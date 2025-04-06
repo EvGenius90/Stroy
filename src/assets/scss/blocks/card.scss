@@ -1,5 +1,6 @@
 .card{
   padding: 0 15px;
+  height: 100%;
 
   &_top{
     position: relative;
@@ -30,6 +31,9 @@
   }
 
   &_title{
+    display: flex;
+    align-items: center;
+    height: 3.9375em;
     font-family: var(--HelveticaNeueCyrMedium);
     font-size: 18px;
     line-height: 144%;
@@ -41,11 +45,12 @@
     p{
       color: #186fd4;
     }
-    
   }
 
   &_prices{
     display: flex;
+    align-items: center;
+    height: 1.5em;
     margin-bottom: 10px;
 
     .old-price{
@@ -105,9 +110,6 @@
     .indicators{
       display: flex;
       gap: 9px;
-      &_like{
-
-      }
 
       &_svg{
         display: flex;
