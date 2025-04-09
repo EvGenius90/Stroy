@@ -49,11 +49,85 @@ export const card = [
     img3: require('@/assets/images/products/mini/Rectangle 43.png'),
     img4: require('@/assets/images/products/mini/Rectangle 44.png'),
     img5: require('@/assets/images/products/mini/Rectangle 42.png'),
-    img6: require('@/assets/images/products/mini/Rectangle 41.png'),
+    img6: require('@/assets/images/products/mini/image 24.png'),
     img7: require('@/assets/images/products/mini/Rectangle 44.png'),
     img8: require('@/assets/images/products/mini/Rectangle 43.png'),
     img9: require('@/assets/images/products/mini/Rectangle 42.png'),
-    img10: require('@/assets/images/products/mini/Rectangle 41.png')
+    img10: require('@/assets/images/products/mini/image 24.png'),
+    asd: [
+      {
+        title: 'Тип товара',
+        desc: 'Дрель-шуруповерт',
+      },
+      {
+        title: 'Бренд',
+        desc: 'MAKITA'
+      },
+      {
+        title: 'Назначение инстурмента',
+        desc: 'профессиональный'
+      },
+      {
+        title: 'Мощность (Вт)',
+        desc: '18'
+      },
+      {
+        title: 'Емкость АКБ (А/ч)',
+        desc: '1.5'
+      },
+      {
+        title: 'Крутящий момент макс. (Н/м)',
+        desc: '30'
+      },
+      {
+        title: 'Напряжение аккумулятора (В)',
+        desc: '14.4'
+      },
+      {
+        title: 'Цвет',
+        desc: 'синий'
+      },
+      {
+        title: 'Диаметр патрона мин. (мм)',
+        desc: '1.5'
+      },
+      {
+        title: 'Диаметр патрона макс. (мм)',
+        desc: '10'
+      },
+      {
+        title: 'Скорость вращения I (об/мин)',
+        desc: '400'
+      },
+      {
+        title: 'Скорость вращения II (об/мин)',
+        desc: '1400'
+      },
+      {
+        title: 'Диаметр сверления дерева макс. (мм)',
+        desc: '15'
+      },
+      {
+        title: 'Диаметр сверления металла макс. (мм)',
+        desc: '25'
+      },
+      {
+        title: 'Тип двигателя',
+        desc: 'щеточный'
+      },
+      {
+        title: 'Вес (кг)',
+        desc: '1.4'
+      },
+      {
+        title: 'Тип патрона',
+        desc: 'быстрозажимной'
+      },
+      {
+        title: 'Тип аккумулятора',
+        desc: 'Li-Ion'
+      },
+    ],
   },
   {
     availability: false,
@@ -62,6 +136,12 @@ export const card = [
     article: 'XJ89YHGO',
     price: 12789,
     img: require('./assets/images/products/Rectangle 22 (3).png'),
+    img1: require('./assets/images/products/Rectangle22.png'),
+    img2: require('@/assets/images/products/mini/Rectangle 42.png'),
+    img3: require('@/assets/images/products/mini/Rectangle 43.png'),
+    img4: require('@/assets/images/products/mini/Rectangle 44.png'),
+    img5: require('@/assets/images/products/mini/Rectangle 42.png'),
+    img6: require('@/assets/images/products/mini/Rectangle 41.png'),
     hit: 'хит'
   },
   {
