@@ -3,6 +3,7 @@ import Card from '@/components/UI/Card.vue';
 import Sidebar from '@/components/UI/Sidebar.vue';
 import { ref } from 'vue';
 import { useRoute } from 'vue-router';
+import { card } from '@/config';
 
 const route = useRoute();
 const category = route.params.category;
@@ -34,9 +35,20 @@ const updt = (cc)=>{
           <div class="products_sidebar">
             <Sidebar/>
           </div>
-          <div class="products_content">
-            <div class="products_items">
-              <Card @zxc="updt"/>
+          <div class="products_content" >
+            <div class="products_items" >
+              <div v-for="item in card" :key="item">
+                <Card
+                :title="item.title"
+                :article="item.article"
+                :price="item.price"
+                :old-price="item.oldPrice"
+                :img="item.img"
+                :hit="item.hit"
+                :percent="item.percent"
+                :alias="item.alias"
+                @zxc="updt"/>
+              </div>
             </div>
           </div>
         </div>

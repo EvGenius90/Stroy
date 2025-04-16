@@ -334,8 +334,9 @@
         }
 
         .list{
-          display: grid;
-          grid-template-columns: 1fr 1fr;
+          // display: grid;
+          // grid-template-columns: 1fr 1fr;
+          column-count: 2;
           column-gap: 97px;
           margin-bottom: 40px;
 
@@ -377,9 +378,7 @@
           position: absolute;
           content: "-";
           left: -10px;
-
         }
-        
       }
 
       .low-color{

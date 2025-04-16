@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, watch } from 'vue';
+import { ref, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { card } from '@/config';
 
@@ -215,33 +215,33 @@ function bColor(event){
                   <h2>Оплата</h2>
                   <p>Оплатить свои покупки вы можете:</p>
                   <ul class="list-pay">
-                    <li>При заказе доставки</li>
-                    <ol>
-                      <li>Банковской картой с помощью платежной системой на сайте</li>
-                      <ul>
-                        <li>МИР</li>
-                        <li>VISA International</li>
-                        <li>Mastercard Worldwide</li>
-                        <li>JCB</li>
-                      </ul>
-                      <li>Наличными водителю при получение заказа</li>
-                    </ol>
+                    <li>
+                      При заказе доставки
+                      <ol>
+                        <li>Банковской картой с помощью платежной системой на сайте</li>
+                        <ul>
+                          <li>МИР</li>
+                          <li>VISA International</li>
+                          <li>Mastercard Worldwide</li>
+                          <li>JCB</li>
+                        </ul>
+                        <li>Наличными водителю при получение заказа</li>
+                      </ol>
+                    </li>
                     <li>
                       При самовывозе
-
+                      <ul>
+                        <li>
+                          Банковской картой с помощью платежной системы на сайте или на кассе при получении заказа.
+                        </li>
+                        <li>Наличными на кассе при получении заказа</li>
+                      </ul>
                     </li>
-                    <ul>
-                      <li>
-                        Банковской картой с помощью платежной системы на сайте или на кассе при получении заказа.
-                      </li>
-                      <li>Наличными на кассе при получении заказа</li>
-                    </ul>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </div>

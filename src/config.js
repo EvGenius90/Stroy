@@ -42,6 +42,7 @@ export const card = [
     price: 12789,
     oldPrice: 15999,
     percent: '-15%',
+    tools: 'tools',
     img: require('./assets/images/products/Rectangle22.png'),
     imgBig: require('@/assets/images/products/big/drill.png'),
     img1: require('./assets/images/products/Rectangle22.png'),
@@ -131,6 +132,7 @@ export const card = [
   },
   {
     availability: false,
+    tools: 'tools',
     alias: 'mixer',
     title: 'Смеситель Faris G-120 для раковины',
     article: 'XJ89YHGO',
@@ -146,6 +148,7 @@ export const card = [
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'fishingLine',
     title: 'Триммерная леска «Спираль-100»',
     article: 'XJ89YHGO',
@@ -156,49 +159,54 @@ export const card = [
   },
   {
     availability: true,
+    category: 'plumbing',
     alias: 'toilet',
     title: 'Унитаз подвесной Aragio с двойным сливом',
     article: 'XJ89YHGO',
     price: 12789,
-    img: require('./assets/images/products/Rectangle 22.png'),
+    img: require('./assets/images/products/Rectangle 2231.png'),
     hit: 'хит'
     
   },
   {
     availability: true,
+    category: 'plumbing',
     alias: 'attachments',
     title: 'Набор гравировальных насадок Nozzle-Tok',
     article: 'XJ89YHGO',
     price: 12789,
     oldPrice: 15999,
     percent: '-15%',
-    img: require('./assets/images/products/Rectangle 22-18.png'),
+    img: require('./assets/images/products/Rectangle 2212.png'),
     
   },
   {
     availability: true,
+    category: 'plumbing',
     alias: 'drill2',
     title: 'Перфоратор универсальный Wander X645-46 GF 1450W',
     article: 'XJ89YHGO',
     price: 12789,
-    img: require('./assets/images/products/Rectangle 22 (2).png'),
+    img: require('./assets/images/products/Rectangle 2231.png'),
     hit: 'хит'
     
   },
   {
     availability: true,
+    category: 'plumbing',
     alias: 'mixer2',
     title: 'Смеситель Faris G-120 для раковины',
     article: 'XJ89YHGO',
     price: 12789,
     oldPrice: 15999,
     percent: '-15%',
-    img: require('./assets/images/products/Rectangle 22 (3).png'),
+    img: require('./assets/images/products/Rectangle 2256.png'),
     hit: 'хит'
     
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'fishingLine2',
     title: 'Триммерная леска «Спираль-100»',
     article: 'XJ89YHGO',
@@ -208,6 +216,7 @@ export const card = [
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'attachments2',
     title: 'Набор гравировальных насадок Nozzle-Tok',
     article: 'XJ89YHGO',
@@ -220,17 +229,19 @@ export const card = [
   },
   {
     availability: true,
+    category: 'plumbing',
     alias: 'toilet2',
     title: 'Унитаз подвесной Aragio с двойным сливом',
     article: 'XJ89YHGO',
     price: 12789,
     oldPrice: 15999,
     percent: '-15%',
-    img: require('./assets/images/products/Rectangle 22-2.png'),
+    img: require('./assets/images/products/Rectangle 2256.png'),
     
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'drill3',
     title: 'Перфоратор универсальный Wander X645-46 GF 1450W',
     article: 'XJ89YHGO',
@@ -241,17 +252,19 @@ export const card = [
   },
   {
     availability: true,
+    category: 'plumbing',
     alias: 'attachments3',
     title: 'Набор гравировальных насадок Nozzle-Tok',
     article: 'XJ89YHGO',
     price: 12789,
     oldPrice: 15999,
     percent: '-15%',
-    img: require('./assets/images/products/Rectangle 22-4.png'),
+    img: require('./assets/images/products/Rectangle 2256.png'),
     
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'mixer3',
     title: 'Смеситель Faris G-120 для раковины',
     article: 'XJ89YHGO',
@@ -262,6 +275,7 @@ export const card = [
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'fishingLine3',
     title: 'Триммерная леска «Спираль-100»',
     article: 'XJ89YHGO',
@@ -273,6 +287,7 @@ export const card = [
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'toilet3',
     title: 'Унитаз подвесной Aragio с двойным сливом',
     article: 'XJ89YHGO',
@@ -283,6 +298,7 @@ export const card = [
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'drill4',
     title: 'Перфоратор универсальный Wander X645-46 GF 1450W',
     article: 'XJ89YHGO',
@@ -294,6 +310,7 @@ export const card = [
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'fishingLine4',
     title: 'Триммерная леска «Спираль-100»',
     article: 'XJ89YHGO',
@@ -304,6 +321,7 @@ export const card = [
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'attachments4',
     title: 'Набор гравировальных насадок Nozzle-Tok',
     article: 'XJ89YHGO',
@@ -316,6 +334,7 @@ export const card = [
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'toilet4',
     title: 'Унитаз подвесной Aragio с двойным сливом',
     article: 'XJ89YHGO',
@@ -327,6 +346,7 @@ export const card = [
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'mixer4',
     title: 'Смеситель Faris G-120 для раковины',
     article: 'XJ89YHGO',
@@ -337,6 +357,7 @@ export const card = [
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'drill5',
     title: 'Перфоратор универсальный Wander X645-46 GF 1450W',
     article: 'XJ89YHGO',
@@ -348,6 +369,7 @@ export const card = [
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'toilet5',
     title: 'Унитаз подвесной Aragio с двойным сливом',
     article: 'XJ89YHGO',
@@ -358,6 +380,7 @@ export const card = [
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'drill6',
     title: 'Перфоратор универсальный Wander X645-46 GF 1450W',
     article: 'XJ89YHGO',
@@ -369,6 +392,7 @@ export const card = [
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'fishingLine5',
     title: 'Триммерная леска «Спираль-100»',
     article: 'XJ89YHGO',
@@ -379,6 +403,7 @@ export const card = [
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'fishingLine6',
     title: 'Триммерная леска «Спираль-100»',
     article: 'XJ89YHGO',
@@ -390,6 +415,7 @@ export const card = [
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'attachments5',
     title: 'Набор гравировальных насадок Nozzle-Tok',
     article: 'XJ89YHGO',
@@ -402,6 +428,7 @@ export const card = [
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'attachments6',
     title: 'Набор гравировальных насадок Nozzle-Tok',
     article: 'XJ89YHGO',
@@ -412,6 +439,7 @@ export const card = [
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'mixer5',
     title: 'Смеситель Faris G-120 для раковины',
     article: 'XJ89YHGO',
@@ -423,6 +451,7 @@ export const card = [
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'mixer6',
     title: 'Смеситель Faris G-120 для раковины',
     article: 'XJ89YHGO',
@@ -433,6 +462,7 @@ export const card = [
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'toilet6',
     title: 'Унитаз подвесной Aragio с двойным сливом',
     article: 'XJ89YHGO',
@@ -444,6 +474,7 @@ export const card = [
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'toilet7',
     title: 'Унитаз подвесной Aragio с двойным сливом',
     article: 'XJ89YHGO',
@@ -456,6 +487,7 @@ export const card = [
   },
   {
     availability: true,
+    tools: 'tools',
     alias: 'attachments7',
     title: 'Набор гравировальных насадок Nozzle-Tok',
     article: 'XJ89YHGO',

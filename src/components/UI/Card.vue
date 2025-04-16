@@ -2,39 +2,61 @@
 import { card } from '@/config';
 import { onMounted, ref } from 'vue';
 
-// const count = ref(card.values.length)
-const cards = ref(card)
-// const count = ()=>{
-//   return cards.value.length
-// }
+const props = defineProps({
+  title: String,
+  article: String,
+  price: Number,
+  oldPrice: Number,
+  percent: String,
+  img: String,
+  img1: String,
+  img2: String,
+  img3: String,
+  img4: String,
+  img5: String,
+  img6: String,
+  img7: String,
+  img8: String,
+  img9: String,
+  img10: String,
+  hit: String,
+  alias: String,
+  show:{
+    type: Number
+  }
+})
+
+const count = ref([])
 const emit = defineEmits(['zxc'])
+
 onMounted(() =>{
-  emit('zxc', cards.value.length)
+  emit('zxc', count.value.length);
+  count.value = card.slice(0, props.show);
 })
 </script>
 
 <template>
-  <div class="card" v-for="cards in card" :key="cards">
+  <div class="card" >
     <div class="card_top">
-      <router-link :to="{path:`/cardDetail/${cards.alias}`}">
-        <img :src="cards.img" alt="">
+      <router-link :to="{path:`/cardDetail/${alias}`}">
+        <img :src="img" alt="">
       </router-link>
-      <div class="card_hit" v-if="cards.hit">
-        {{ cards.hit }}
+      <div class="card_hit" v-if="hit">
+        {{ hit }}
       </div>
     </div>
     <div class="card_article">
-      Артикул: {{ cards.article }}
+      Артикул: {{ article }}
     </div>
     <div class="card_title">
-      <router-link :to="{path:`/cardDetail/${cards.alias}`}">
-        <p>{{ cards.title }}</p>
+      <router-link :to="{path:`/cardDetail/${alias}`}">
+        <p>{{ title }}</p>
       </router-link>
     </div>
     <div class="card_prices">
-      <div class="old-price" v-if="cards.oldPrice">{{ cards.oldPrice }} ₽</div>
-      <div class="price">{{ cards.price }} ₽</div>
-      <div class="percent" v-if="cards.oldPrice">{{ cards.percent }}</div>
+      <div class="old-price" v-if="oldPrice">{{ oldPrice }} ₽</div>
+      <div class="price">{{ price }} ₽</div>
+      <div class="percent" v-if="oldPrice">{{ percent }}</div>
     </div>
     <div class="card_bottom">
       <div class="to-basket">

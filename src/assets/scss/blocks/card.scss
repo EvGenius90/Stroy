@@ -1,6 +1,11 @@
 .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: stretch;
   padding: 0 15px;
   height: 100%;
+  width: calc(93.5% + 8px - 2.4px - 5.4px);
 
   &_top{
     position: relative;
