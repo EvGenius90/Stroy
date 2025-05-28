@@ -99,7 +99,8 @@
     li{
       // width: calc(70% - 382px);
       // min-width: 382px;
-      width: calc(23.5% + 8px - 2.4px - 5.4px);
+      // width: calc(23.5% + 8px - 2.4px - 5.4px);
+      width: calc(24% - 7px);
       flex-shrink: 0;
       
       a{

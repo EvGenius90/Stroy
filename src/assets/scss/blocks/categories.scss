@@ -6,6 +6,7 @@
   &_list{
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     a{
       .li{
         text-align: center;
@@ -15,6 +16,7 @@
         height: 197px;
         background: #f3f4f5;
         max-width: 185px;
+        // width: calc(100% - 20px);
         border-radius: 15px;
 
         .block{
@@ -26,6 +28,7 @@
             justify-content: center;
             img{
               mix-blend-mode: darken;
+              height: 100%;
             }
           }
           .text{

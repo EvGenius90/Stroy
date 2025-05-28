@@ -41,7 +41,8 @@
         display: none;
 
         .card-wrapper{
-          max-width: 308px;
+          // max-width: 308px;
+          width: calc(24% + 8px - 2.4px - 5.4px);
           flex-shrink: 0;
         }
 
